@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import signature from "../../public/signature.png"
+// import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Home", href: "/#home", ariaLabel: "Home" },
-  { label: "Features", href: "/#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "/#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
-  { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "Blog", href: "/#blog", ariaLabel: "blog" },
+  { label: "Achievements", href: "/#achievement", ariaLabel: "Features" },
+  { label: "Contact", href: "/#contact", ariaLabel: "contact" },
+  { label: "Service", href: "/#service", ariaLabel: "service" },
+  // { label: "Service", href: "/#FAQ", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {
@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
+      className="w-[90%] h-20 flex flex-col justify-center items-center fixed  z-40 lg:backdrop-blur-xl mx-24 border-2 rounded-2xl mt-5"
       aria-label="Main navigation"
     >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -29,12 +29,14 @@ export const Navbar = () => {
         >
           <a href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
+              {/* <div className="text-white mr-2 text-6xl">
                 <TailcastLogo />
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
                 Tailcast
-              </div>
+              </div> */}
+              <img src={signature} className="w-10 h-10 text-white" alt="logo"/>
+              {console.log(signature)}
             </div>
           </a>
         </motion.div>
@@ -51,13 +53,14 @@ export const Navbar = () => {
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
+                target="blank"
               >
                 {label}
               </a>
             ))}
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
@@ -75,7 +78,7 @@ export const Navbar = () => {
               <span className="pt-px">Source code</span>
             </a>
           </div>
-        </motion.div>
+        </motion.div> */}
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2"
           onClick={() => setIsOpen(!isOpen)}
@@ -106,18 +109,19 @@ export const Navbar = () => {
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}
+                  target="_blank"
                 >
                   {label}
                 </a>
               ))}
-              <a
+              {/* <a
                 className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
                 <GithubIcon />
                 Source code
-              </a>
+              </a> */}
             </div>
           </motion.div>
         )}
