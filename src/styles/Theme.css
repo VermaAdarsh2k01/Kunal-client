@@ -41,3 +41,8 @@
 @font-face {
   font-display: var(--fontsource-Inter-font-display, optional);
 }
+
+
+.font-grotesk{
+  font-family: 'Space Grotesk', sans-serif;
+}

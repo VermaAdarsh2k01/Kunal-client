@@ -1,23 +1,75 @@
 import React from 'react'
 import { useState } from "react";
 import { motion } from "framer-motion";
-import HeroImg from "../../public/Hero.png"
+import HeroImg from "../assets/images/Hero.png"
+import downArrou from "../../public/downArrow.png"
+import { FaArrowUp } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
+export const socialLinks = [
+  { label: "Facebook", href: "https://facebook.com/your-profile", icon: <FaFacebook size={24} />, ariaLabel: "Facebook" },
+  { label: "Twitter", href: "https://twitter.com/your-profile", icon: <FaTwitter size={24} />, ariaLabel: "Twitter" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/your-profile", icon: <FaLinkedin size={24} />, ariaLabel: "LinkedIn" },
+  // Add more social links here
+];
+
 
 const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     
     <section
-      className="w-screen flex justify-center items-center bg-gradient-to-b from-[#1B1F24] to-[#262C32] via-[#1B1F24] via-20% mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0 pt-36 h-screen overflow-hidden" 
+      className="w-screen flex justify-center items-center bg-gradient-to-b from-[#1B1F24] to-[#282E36] via-[#1B1F24] via-20% pb-24 sm:pb-32 md:pb-44 lg:pb-0 pt-36 h-screen overflow-hidden px-10" 
       id="home"
     >
-        <div className='h-20 w-[25%] text-white flex items-center justify-center'>
-            Test
+        <div className='w-[25%] text-white flex flex-col items-start justify-evenly h-[80%] z-10'>
+            <div className='w-[60%] h-4 bg-white mb-20'></div>
+            <div className='mb-10'>
+              <p className='text-[75px] whitespace-nowrap font-grotesk font-bold z-40'>I'am Kunel Trehan</p>
+              <div className='text-[15px] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida. Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida. Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida.</div>
+            </div>
+            <div className='w-20 h-20 bg-[#075FE4] rounded-full'>
+              <img src={downArrou.src}/>
+            </div>
         </div>
-        <div className=' w-[50%] text-white flex items-center justify-center overflow-hidden'>
-            <img src={HeroImg.src} className='w-[600px] overflow-hidden' alt='picture' />
+        <div className='w-[50%] text-white flex items-center justify-center '>
+            <img src={HeroImg.src} className='w-[700px] overflow-hidden pt-20' alt='picture' />
         </div>
-        <div className='h-20 w-[25%] text-white'>Test</div>
+        <div className='w-[25%] h-[90%]  text-white flex flex-col items-start justify-center '>
+          <div className='h-[33%] w-full flex flex-col items-start justify-between border-b border-gray-500 '>
+            <p className='text-[32px] font-semibold'>About me</p>
+            <p className='text-[16px] mt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci</p>
+            <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center'>
+              <p className=''>Learn More</p>
+              <FaArrowUp className='rotate-45 ms-2' />
+            </div>
+          </div>
+          <div className='h-[33%] w-full mt-4 flex flex-col items-start justify-between border-b border-gray-500 ' >
+            <p className='text-[32px] font-semibold'>My Work</p>
+            <p className='text-[16px] mt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci</p>
+            <div className='mt-10 mb-4 text-[#a8a8a8] flex items-center justify-center'>
+              <p className=''>Learn More</p>
+              <FaArrowUp className='rotate-45 ms-2' />
+            </div>
+          </div>
+          <div className='h-[33%] w-full flex flex-col items-start gap-5 mt-6 text-4xl semibold '>
+            <p>Follow me</p>
+            <div className='flex items-center justify-start gap-2'>
+                {socialLinks.map(({ href, icon, ariaLabel }) => (
+                <a
+                  key={href}
+                  href={href}
+                  aria-label={ariaLabel}
+                  className="text-white hover:scale-110 transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       {/* <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
