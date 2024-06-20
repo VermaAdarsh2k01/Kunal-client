@@ -5,10 +5,10 @@ import signature from "../assets/images/signature.png"
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-    { label: "Blog", href: "/#blog", ariaLabel: "blog" },
-    { label: "Achievements", href: "/#achievement", ariaLabel: "Features" },
-    { label: "Contact", href: "/#contact", ariaLabel: "contact" },
-    { label: "Service", href: "/#service", ariaLabel: "service" },
+    { label: "Blog", href: "/Blogs", ariaLabel: "blog" },
+    { label: "Achievements", href: "/achievement", ariaLabel: "Features" },
+    { label: "Contact", href: "/Contact", ariaLabel: "contact" },
+    { label: "Service", href: "/Service", ariaLabel: "service" },
     // { label: "Service", href: "/#FAQ", ariaLabel: "FAQ" },
   ];
 
@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-screen h-20 flex justify-center items-center fixed z-40 rounded-2xl mt-5 "
+      className="w-screen h-20 flex justify-center items-center fixed z-50 rounded-2xl mt-5 "
       aria-label="Main navigation"
     >
         <div className='2xl:w-[800px] xl:w-10/12 flex bg-[#161616] justify-between items-center relative h-full rounded-full px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
@@ -30,12 +30,7 @@ export const Navbar = () => {
             >
             <a href="/#home" aria-label="Home">
                 <div className="flex justify-start items-center grow basis-0">
-                {/* <div className="text-white mr-2 text-6xl">
-                    <TailcastLogo />
-                </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                    Tailcast
-                </div> */}
+                
                 <img src={signature.src} className="w-25  text-white" alt="logo"/>
                 </div>
             </a>
@@ -53,7 +48,7 @@ export const Navbar = () => {
                         href={href}
                         aria-label={ariaLabel}
                         key={label}
-                        target="blank"
+                        
                     >
                         {label}
                     </a>
