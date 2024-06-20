@@ -6,6 +6,7 @@ import feature3 from "../assets/images/feature3.jpg";
 import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import AboutPic from "../assets/images/aboutPic.png"
+import Interior from "../assets/images/Mask group (1).png"
 
 export const Features1 = () => {
   return (
@@ -48,7 +49,7 @@ export const Features1 = () => {
             </div>
           </div>
           <div className="w-3/4 mx-auto lg:w-1/3 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center items-start lg:pl-4 xl:px-8 h-full">
-            <img src={AboutPic.src} alt="about pic" className=""/>
+            <img src={Interior.src} alt="about pic" className="mt-20"/>
           </div>
         </div>
       </motion.div>

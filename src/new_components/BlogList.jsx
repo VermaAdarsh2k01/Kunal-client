@@ -28,7 +28,7 @@ const BlogList = ({ blogData }) => {
                     <h2 className="text-xl font-bold mt-4">{post.title}</h2>
                 </div>
                 <div className='w-1/3'>
-                    <img src={post.image.src} className="w-full h-48 object-cover rounded-t-lg" />
+                    <img src={post.image} className="w-full h-48 object-cover rounded-t-lg" />
                 </div>
             </a>
           </div>

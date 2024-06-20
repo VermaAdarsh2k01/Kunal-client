@@ -5,7 +5,7 @@ export const blogData = [
       title: "The Best IDE’s and Code Editors for Developers in 2022",
       date: "March 18, 2024",
       subtitle: "Discover insights and trends in the world of data analytics",
-      image: "/assets/images/post1.png",
+      image: "../assets/images/post1.png",
       content: `
         <p>AI and Machine Learning are now vital components of contemporary technology...</p>
         <!-- Truncated for brevity -->
@@ -19,7 +19,7 @@ export const blogData = [
       date: "March 18, 2024",
       subtitle: "Subtitle for the second post",
       
-      image: "/assets/images/post2.png",
+      image: "../assets/images/post2.png",
       content: `
         <p>This is the content for the second post...</p>
       `,
@@ -31,7 +31,7 @@ export const blogData = [
         date: "March 18, 2024",
         subtitle: "Discover insights and trends in the world of data analytics",
  
-        image: "/assets/images/post3.png",
+        image: "../assets/images/post3.png",
         content: `
           <p>AI and Machine Learning are now vital components of contemporary technology...</p>
           <!-- Truncated for brevity -->
@@ -45,7 +45,7 @@ export const blogData = [
         date: "March 18, 2024",
         subtitle: "Discover insights and trends in the world of data analytics",
 
-        image: "/assets/images/post1.png",
+        image: "../assets/images/post1.png",
         content: `
           <p>AI and Machine Learning are now vital components of contemporary technology...</p>
           <!-- Truncated for brevity -->
