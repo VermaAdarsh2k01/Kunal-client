@@ -10,7 +10,7 @@ import AboutPic from "../assets/images/aboutPic.png"
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-gradient-to-t  to-[#282E36]  from-[#1B1F24] pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0  md:pt-[12vw] lg:pt-16"
+      className="w-full bg-gradient-to-t  to-[#282E36]  from-[#1B1F24] pt-24 -mt-8  sm:-mt-8  xl:-mt-8 2xl:mt-0  md:pt-[12vw] lg:pt-16"
       id="features"
     >
       <motion.div
@@ -19,12 +19,12 @@ export const Features1 = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16 h-screen font-grotesk">
+        <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16 h-screen ">
           <div className="w-full lg:w-2/3 mb-12 lg:mb-0 h-full">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <div className="flex items-center justify-start gap-2">
-                <span className="font-grotesk text-[#075FE4] font-black text-2xl">/</span>
-                <p className="font-grotesk text-2xl font-bold text-white">About me</p>
+                <span className=" text-[#075FE4] font-black text-2xl">/</span>
+                <p className=" text-2xl font-bold text-white">About me</p>
               </div>
               <h2 className="mt-32 mb-8 text-4xl lg:text-5xl block-big-title w-[80%]">
                 I'am a Business & Workplace Specialist

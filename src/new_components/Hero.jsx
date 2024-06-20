@@ -1,15 +1,19 @@
 import React from 'react'
 import { useState } from "react";
 import { motion } from "framer-motion";
-import HeroImg from "../assets/images/Hero.png"
-import downArrou from "../../public/downArrow.png"
+import Hero2 from "../assets/images/Hero2.png"
 import { FaArrowUp } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FacebookIcon } from "../assets/icons/FacebookIcon";
+import { InstagramIcon } from "../assets/icons/InstagramIcon";
+import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import { TwitterIcon } from "../assets/icons/TwitterIcon";
+
 
 export const socialLinks = [
-  { label: "Facebook", href: "https://facebook.com/your-profile", icon: <FaFacebook size={24} />, ariaLabel: "Facebook" },
-  { label: "Twitter", href: "https://twitter.com/your-profile", icon: <FaTwitter size={24} />, ariaLabel: "Twitter" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/your-profile", icon: <FaLinkedin size={24} />, ariaLabel: "LinkedIn" },
+  { label: "Facebook", href: "https://facebook.com/your-profile", icon:<FacebookIcon />, ariaLabel: "Facebook" },
+  { label: "Twitter", href: "https://twitter.com/your-profile", icon: <TwitterIcon />, ariaLabel: "Twitter" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/your-profile", icon: <InstagramIcon />, ariaLabel: "LinkedIn" },
   // Add more social links here
 ];
 
@@ -19,23 +23,22 @@ const Hero = () => {
   return (
     
     <section
-      className="w-screen flex justify-center items-center bg-gradient-to-b from-[#1B1F24] to-[#282E36] via-[#1B1F24] via-20% pb-24 sm:pb-32 md:pb-44 lg:pb-0 pt-36 h-screen overflow-hidden px-10" 
+      className="w-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 pt-36 h-screen overflow-hidden px-10 relative" 
       id="home"
     >
-        <div className='w-[25%] text-white flex flex-col items-start justify-evenly h-[80%] z-10'>
-            <div className='w-[60%] h-4 bg-white mb-20'></div>
-            <div className='mb-10'>
-              <p className='text-[75px] whitespace-nowrap font-grotesk font-bold z-40'>I'am Kunel Trehan</p>
-              <div className='text-[15px] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida. Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida. Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis ullamcorper quis id elementum convallis lacus gravida.</div>
+       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] " />
+        <div className='w-[25%] text-white flex flex-col items-start justify-center  h-[80%] z-10'>
+            <div className='w-[50%] h-2 bg-white mb-20'></div>
+            <div>
+              <p className='text-[70px] whitespace-nowrap font-bold z-40'>I'am Kunel Trehan</p>
+              <div className='text-[15px] w-[80%]'>I am Kunal Trehan, a strategic leader with over 25 years of experience in driving business growth and expanding market reach. My expertise lies in unlocking business potential through innovative strategies and visionary leadership. Throughout my career, I have successfully navigated complex market dynamics, establishing prominent brands and achieving double-digit growth.</div>
             </div>
-            <div className='w-20 h-20 bg-[#075FE4] rounded-full'>
-              <img src={downArrou.src}/>
-            </div>
+            
         </div>
-        <div className='w-[50%] text-white flex items-center justify-center '>
-            <img src={HeroImg.src} className='w-[700px] overflow-hidden pt-20' alt='picture' />
+        <div className='w-[50%] text-white flex items-center justify-center z-10'>
+            <img src={Hero2.src} className='w-[500px] overflow-hidden pt-20' alt='picture' />
         </div>
-        <div className='w-[25%] h-[90%]  text-white flex flex-col items-start justify-center '>
+        <div className='w-[25%] h-[90%] text-white flex flex-col items-start justify-center z-10'>
           <div className='h-[33%] w-full flex flex-col items-start justify-between border-b border-gray-500 '>
             <p className='text-[32px] font-semibold'>About me</p>
             <p className='text-[16px] mt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci</p>
@@ -155,7 +158,6 @@ const Hero = () => {
           </div>
         </div>
       </div> */}
-
       {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       )}
@@ -163,4 +165,7 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
+
+
+<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>

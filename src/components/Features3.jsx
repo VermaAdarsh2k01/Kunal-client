@@ -9,8 +9,9 @@ import Feat2_2 from "../assets/images/feat2_2.jpg"
 import client1 from "../assets/images/client1.png"
 import client2 from "../assets/images/client2.png"
 import client3 from "../assets/images/client3.png"
+import SitAndGrow from "../assets/images/siteAndgrow.jpg"
 
-export const Features2 = () => (
+export const Features3 = () => (
   <section className="w-full bg-gradient-to-b from-[#1B1F24] to-[#282E36] via-[#1B1F24] mb-12  lg:mb-24 pt-4">
     {/* <motion.div
       initial={{ opacity: 0 }}
@@ -73,35 +74,20 @@ export const Features2 = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16 mb-20 ">
-          <div className="w-full mb-12 lg:mb-0 h-full">
-            <div className="mx-auto lg:mx-auto w-[70%] sm:w-4/5 md:w-3/4 lg:w-[85%] min-h-screen flex flex-col jsutify-center mb-20 ">
-              <p className="text-3xl text-white font-black mt-20">Professional Journey</p>
-              <div className="w-full px-40 flex mt-20 items-start justify-between">
-                <img src={Feat2_1.src} className="w-80 rounded-3xl"/>
-                <div className="w-80  flex flex-col items-start justify-between mt-14 ">
-                  <p className="text-white text-2xl font-bold"> <span className=" text-[#075FE4] font-black text-2xl">/</span> How i started</p>
-                  <p className="text-white  mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-              <div className="w-full px-40 flex flex-row-reverse mt-10 items-start justify-between">
-                <img src={Feat2_2.src} className="w-80 rounded-3xl"/>
-                <div className="w-80  flex flex-col items-start justify-between mt-32 ">
-                  <p className="text-white text-2xl font-bold"> <span className=" text-[#075FE4] font-black text-2xl mr-1">/</span>My Journey</p>
-                  <p className="text-white  mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
+        <div className="w-screen min-h-screen px-32 pt-10">
+            <div className="flex items-center justify-start gap-2">
+                <span className=" text-[#075FE4] font-black text-2xl">/</span>
+                <p className=" text-2xl font-bold text-white">About me</p>
             </div>
-            <div className="w-full border-b-2 border-white/50"></div>
-            <div className=" w-full flex items-center justify-between py-20">
-              <p className="text-3xl font-bold text-white">Previously worked with</p>
-              <div className="flex items-center justify-center gap-12">
-                <img src={client1.src} className="w-40 mix mix-blend-multiply"/>
-                <img src={client2.src} className="w-40"/>
-                <img src={client3.src} className="w-40 mix-blend-multiply"/>
-              </div>
+            <div className="flex items-center justify-between mt-20 gap-20">
+                <div className="w-[60%]">
+                    <img src={SitAndGrow.src} className="w-[90%]"/>
+                </div>
+                <div className="w-[40%] flex flex-col items-start justify-center gap-20">
+                    <p className="text-white text-4xl font-black">Site And Grow Rich</p>
+                    <p className="text-white">In "Sit and Get Rich," I unveil actionable strategies derived from my extensive experience in business and market expansion. This book empowers readers to harness passive income and strategic investments, paving the way to financial independence and enduring wealth. Ideal for aspiring entrepreneurs and seasoned investors seeking tangible growth and prosperity.</p>
+                </div>
             </div>
-          </div>
         </div>
       </motion.div>
   </section>

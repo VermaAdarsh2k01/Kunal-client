@@ -18,10 +18,10 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-screen h-20 flex justify-center items-center fixed z-40  rounded-2xl mt-5 "
+      className="w-screen h-20 flex justify-center items-center fixed z-40 rounded-2xl mt-5 "
       aria-label="Main navigation"
     >
-        <div className='2xl:w-[1060px] xl:w-10/12 border-2 flex justify-between items-center relative h-full rounded-3xl px-10 lg:backdrop-blur-xl'>
+        <div className='2xl:w-[800px] xl:w-10/12 flex bg-[#161616] justify-between items-center relative h-full rounded-full px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -49,7 +49,7 @@ export const Navbar = () => {
                 <div className="hidden lg:flex h-full pl-12 pb-2">
                     {navbarLinks.map(({ href, label, ariaLabel }) => (
                     <a
-                        className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                        className="text-white lg:text-sm text-lg leading-6 mr-1 ml-1 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                         href={href}
                         aria-label={ariaLabel}
                         key={label}
@@ -78,14 +78,12 @@ export const Navbar = () => {
             exit={{ opacity: 0 }}
           >
             <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-bgDark1 z-50 w-full 
-        items-center gap-10 pb-10 border-y border-solid border-bgDark3 pt-10
-        "
+              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-bgDark1 z-50 w-full items-center gap-8 pb-10 border-y border-solid border-bgDark3 pt-10"
             >
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
                   key={href}
-                  className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                  className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}
