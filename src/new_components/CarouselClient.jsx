@@ -18,19 +18,19 @@ export function CarouselClient() {
     <div className="embla lg:w-[60%] xs:w-full" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide flex items-center justify-center gap-10">
-          <img src={client1.src} className="lg:w-40 xs:w-20 "/>
-          <img src={client2.src} className="lg:w-40 xs:w-20"/>
-          <img src={client3.src} className="lg:w-40 xs:w-20"/>
+          <img src={client1.src} className="lg:w-40 w-20 xs:w-20 "/>
+          <img src={client2.src} className="lg:w-40 w-20 xs:w-20"/>
+          <img src={client3.src} className="lg:w-40 w-20 xs:w-20"/>
         </div>
         <div className="embla__slide flex items-center justify-center gap-10">
-          <img src={client4.src} className="lg:w-40 xs:w-20"/>
-          <img src={client5.src} className="lg:w-40 xs:w-20"/>
-          <img src={client6.src} className="lg:w-24 xs:w-20"/>
+          <img src={client4.src} className="lg:w-40 w-20 xs:w-20"/>
+          <img src={client5.src} className="lg:w-40 w-20 xs:w-20"/>
+          <img src={client6.src} className="lg:w-24 w-20 xs:w-20"/>
         </div>
         <div className="embla__slide flex items-center justify-center gap-10">
-          <img src={client7.src} className="lg:w-40 xs:w-20"/>
-          <img src={client8.src} className="lg:w-40 xs:w-20"/>
-          <img src={client9.src} className="lg:w-40 xs:w-20"/>
+          <img src={client7.src} className="lg:w-40 w-20 xs:w-20"/>
+          <img src={client8.src} className="lg:w-40 w-20 xs:w-20"/>
+          <img src={client9.src} className="lg:w-40 w-20 xs:w-20"/>
         </div>
       </div>
     </div>
