@@ -18,10 +18,10 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-screen h-20 flex justify-center items-center fixed z-50 rounded-2xl mt-5 "
+      className="w-screen h-20 flex justify-center items-center fixed z-50 rounded-2xl lg:mt-5 xs:mt-2"
       aria-label="Main navigation"
     >
-        <div className='2xl:w-[800px] xl:w-10/12 flex bg-[#161616] justify-between items-center relative h-full rounded-full px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
+        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] flex bg-[#161616] justify-between items-center relative lg:h-full xs:py-2 rounded-full px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -31,7 +31,7 @@ export const Navbar = () => {
             <a href="/#home" aria-label="Home">
                 <div className="flex justify-start items-center grow basis-0">
                 
-                <img src={signature.src} className="w-25  text-white" alt="logo"/>
+                <img src={signature.src} className="lg:w-24 xs:w-[70%] text-white" alt="logo"/>
                 </div>
             </a>
             </motion.div>

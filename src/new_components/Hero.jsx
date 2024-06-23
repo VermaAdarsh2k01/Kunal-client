@@ -23,56 +23,69 @@ const Hero = () => {
   return (
     
     <section
-      className="w-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 pt-36 h-screen overflow-hidden px-10 relative" 
+      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 lg:pt-36 xs:pt-32 xs:pb-0 overflow-hidden  px-10 relative" 
       id="home"
     >
-       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] " />
-        <div className='w-[25%] text-white flex flex-col items-start justify-center  h-[80%] z-10'>
-            <div className='w-[50%] h-2 bg-white mb-20'></div>
-            <div>
-              <p className='text-[70px] whitespace-nowrap font-bold z-40'>I'am Kunel Trehan</p>
-              <div className='text-[15px] w-[80%]'>I am Kunal Trehan, a strategic leader with over 25 years of experience in driving business growth and expanding market reach. My expertise lies in unlocking business potential through innovative strategies and visionary leadership. Throughout my career, I have successfully navigated complex market dynamics, establishing prominent brands and achieving double-digit growth.</div>
+      
+      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] h-full" />
+       <motion.div>
+        <div className='xs:order-1 lg:order-1 w-full h-full  max-xs:flex-col max-xs:gap-20 lg:flex relative lg:pt-32'>
+          <div className='xs:w-[100%] lg:w-[25%] text-white flex flex-col items-start justify-center h-[80%] lg:pt-16 z-10'>
+              <div className='lg:w-[40%] lg:h-2 bg-white lg:mb-20 xs:w-[20%] xs:h-2'></div>
+              <div>
+                <p className='xs:text-[30px] lg:text-[65px] whitespace-nowrap font-bold z-40 xs:mt-10 lg:mt-0'>I'am Kunel Trehan</p>
+                <div className='xs:text-[12px] lg:text-[13px] w-[80%] xs:w-[100%] xs:mt-6 lg:mt-0 text-gray-400 z-20'>I am Kunal Trehan, a strategic leader with over 25 years of experience in driving business growth and expanding market reach. My expertise lies in unlocking business potential through innovative strategies and visionary leadership. Throughout my career, I have successfully navigated complex market dynamics, establishing prominent brands and achieving double-digit growth.</div>
+              </div>
+          </div>
+          <div className=' xs:order-3 lg:order-2 lg:w-[50%] xs:hidden text-white lg:flex items-center justify-center  z-10 '>
+              <img src={Hero2.src} className='w-[500px] overflow-hidden lg:pt-2' alt='picture' />
+          </div>
+          <div className='xs:order-2 lg:order-3 lg:w-[25%] h-[90%] text-white flex flex-col max-xs:gap-12 items-start justify-center z-10 xs:w-[100%] xs:mt-6 lg:mt-0 '>
+            <div className='xs:flex lg:flex-col xs:gap-6 '>
+              <div className='h-[33%] w-full xs:mt-4 lg:mt-0 flex flex-col items-start justify-between '>
+                <p className='lg:text-[32px] font-semibold xs:text-[20px]'>About me</p>
+                <p className='xs:text-[10px] lg:text-[13px] mt-2 xs:h-20 lg:full text-gray-400'>I am  a strategic leader specializing in driving growth, unlocking business potential, and expanding markets internationally in the furniture, luxury home interiors, and construction industries.</p>
+                <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center border-gray-500 border-b'>
+                  <a 
+                    href="#about_me"
+                    className=''>Learn More</a>
+                  <FaArrowUp className='rotate-45 ms-2'/>
+                </div>
+              </div>
+              <div className='h-[33%] w-full mt-4 flex flex-col items-start justify-between' >
+                <p className='lg:text-[32px] xs:text-[20px] font-semibold'>My Work</p>
+                <p className='lg:text-[13px] mt-2 xs:text-[10px] xs:h-20 lg:h-full text-gray-400'>I drive growth, unlock business potential, and expand markets internationally in the furniture, luxury home interiors, and construction industries.</p>
+                <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center border-gray-500 border-b'>
+                  <a 
+                    href="#work"
+                    className=''>Learn More</a>
+                  <FaArrowUp className='rotate-45 ms-2'/>
+                </div>
+              </div>
             </div>
-            
-        </div>
-        <div className='w-[50%] text-white flex items-center justify-center z-10'>
-            <img src={Hero2.src} className='w-[500px] overflow-hidden pt-20' alt='picture' />
-        </div>
-        <div className='w-[25%] h-[90%] text-white flex flex-col items-start justify-center z-10'>
-          <div className='h-[33%] w-full flex flex-col items-start justify-between border-b border-gray-500 '>
-            <p className='text-[32px] font-semibold'>About me</p>
-            <p className='text-[16px] mt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci</p>
-            <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center'>
-              <p className=''>Learn More</p>
-              <FaArrowUp className='rotate-45 ms-2' />
+            <div className='h-[33%] w-full flex flex-col items-start gap-5 mt-6 lg:text-[32px] xs:text-[20px] font-semibold '>
+              <p>Follow me</p>
+              <div className='flex items-center justify-start gap-2'>
+                  {socialLinks.map(({ href, icon, ariaLabel }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    aria-label={ariaLabel}
+                    className="text-white hover:scale-110 transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {icon}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-          <div className='h-[33%] w-full mt-4 flex flex-col items-start justify-between border-b border-gray-500 ' >
-            <p className='text-[32px] font-semibold'>My Work</p>
-            <p className='text-[16px] mt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci</p>
-            <div className='mt-10 mb-4 text-[#a8a8a8] flex items-center justify-center'>
-              <p className=''>Learn More</p>
-              <FaArrowUp className='rotate-45 ms-2' />
-            </div>
-          </div>
-          <div className='h-[33%] w-full flex flex-col items-start gap-5 mt-6 text-4xl semibold '>
-            <p>Follow me</p>
-            <div className='flex items-center justify-start gap-2'>
-                {socialLinks.map(({ href, icon, ariaLabel }) => (
-                <a
-                  key={href}
-                  href={href}
-                  aria-label={ariaLabel}
-                  className="text-white hover:scale-110 transition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {icon}
-                </a>
-              ))}
-            </div>
+          <div className='lg:hidden w-full flex items-center justify-center text-white mt-8'>
+            <img src={Hero2.src} className='w-[50%]'/>
           </div>
         </div>
+        </motion.div>
       {/* <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -168,4 +181,3 @@ const Hero = () => {
 export default Hero;
 
 
-<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>

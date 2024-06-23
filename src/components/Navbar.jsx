@@ -5,10 +5,10 @@ import signature from "../assets/images/signature.png"
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Blog", href: "/#blog", ariaLabel: "blog" },
-  { label: "Achievements", href: "/#achievement", ariaLabel: "Features" },
-  { label: "Contact", href: "/#contact", ariaLabel: "contact" },
-  { label: "Service", href: "/#service", ariaLabel: "service" },
+  { label: "Blog", href: "/blog", ariaLabel: "blog" },
+  { label: "Achievements", href: "/achievement", ariaLabel: "achievement" },
+  { label: "Contact", href: "/contact", ariaLabel: "contact" },
+  { label: "Service", href: "/service", ariaLabel: "service" },
   // { label: "Service", href: "/#FAQ", ariaLabel: "FAQ" },
 ];
 
@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-[90%] h-20 flex flex-col justify-center items-center fixed z-40 lg:backdrop-blur-xl border-2 rounded-2xl mt-5"
+      className="w-[90%] h-20 flex flex-col justify-center items-center fixed z-40 lg:backdrop-blur-xl border-2 rounded-2xl mt-5 xs:w-[100%]"
       aria-label="Main navigation"
     >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -35,7 +35,7 @@ export const Navbar = () => {
               <div className="text-white font-['Inter'] font-bold text-xl">
                 Tailcast
               </div> */}
-              <img src={signature.src} className="w-25  text-white" alt="logo"/>
+              <img src={signature.src} className="w-25 mix-blend-multiply text-white" alt="logo"/>
               {console.log(signature)}
             </div>
           </a>
@@ -53,7 +53,7 @@ export const Navbar = () => {
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
-                target="blank"
+                target="_self"
               >
                 {label}
               </a>

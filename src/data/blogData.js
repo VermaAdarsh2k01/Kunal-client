@@ -45,7 +45,7 @@ export const blogData = [
         date: "March 18, 2024",
         subtitle: "Discover insights and trends in the world of data analytics",
 
-        image: "../assets/images/post1.png",
+        image: "..../src/assets/images/post1.png",
         content: `
           <p>AI and Machine Learning are now vital components of contemporary technology...</p>
           <!-- Truncated for brevity -->
