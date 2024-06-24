@@ -23,29 +23,29 @@ const Hero = () => {
   return (
     
     <section
-      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-0 sm:pb-0 md:pb-0 lg:pb-0 pt-32 lg:pt-36 xs:pt-32 xs:pb-0 overflow-hidden  px-4 xs:px-10 relative" 
+      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-0 sm:pb-0 md:pb-0 lg:pb-0 pt-32 lg:pt-24 xl:pt-32 xs:pt-32 xs:pb-0 overflow-hidden px-4 xs:px-10 relative" 
       id="home"
     >
       
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]  " />
        <motion.div>
-        <div className='xs:order-1 lg:order-1 w-full h-full max-xs:flex-col max-xs:gap-20 lg:flex relative lg:pt-32'>
-          <div className='xs:w-[100%] lg:w-[25%] text-white flex flex-col items-start justify-center h-[80%] lg:pt-16 z-10'>
+        <div className=' w-full h-full max-xs:flex-col max-xs:gap-20 lg:flex relative lg:pt-16 '>
+          <div className='xs:w-[100%] lg:w-[25%] xs:order-1 lg:order-1 text-white flex flex-col items-start justify-center h-[80%] lg:pt-16 xl:pt-24 z-10'>
               <div className='w-[20%] xs:w-[20%] lg:w-[40%] h-2 lg:h-2 bg-white xs:mb-2 lg:mb-10 mb-6 xs:h-2 xs:mt-0 lg:mt-20'></div>
               <div>
-                <p className=' text-[30px] xs:text-[30px] lg:text-[65px] md:text-4xl whitespace-nowrap font-bold z-40 xs:mt-10 lg:mt-0'>I'am Kunel Trehan</p>
-                <div className='text-[12px] xs:text-[12px] lg:text-[13px] md:text-[13px] w-[100%] xs:w-[100%] lg:w-[80%] mt-6 xs:mt-6 lg:mt-0 text-gray-400 z-20'>I am Kunal Trehan, a strategic leader with over 25 years of experience in driving business growth and expanding market reach. My expertise lies in unlocking business potential through innovative strategies and visionary leadership. Throughout my career, I have successfully navigated complex market dynamics, establishing prominent brands and achieving double-digit growth.</div>
+                <p className='text-[30px] xs:text-[30px] lg:text-[40px] xl:text-[65px] md:text-4xl whitespace-nowrap font-bold z-40 xs:mt-10 lg:mt-0'>I'am Kunel Trehan</p>
+                <div className='text-[12px] xs:text-[12px] lg:text-[12px] xl:text-[13px] md:text-[13px] w-[100%] xs:w-[100%] lg:w-[90%] mt-6 xs:mt-6 lg:mt-6 xl:mt-10 text-gray-400 z-20'>I am Kunal Trehan, a strategic leader with over 25 years of experience in driving business growth and expanding market reach. My expertise lies in unlocking business potential through innovative strategies and visionary leadership. Throughout my career, I have successfully navigated complex market dynamics, establishing prominent brands and achieving double-digit growth.</div>
               </div>
           </div>
           <div className='xs:order-3 lg:order-2 lg:w-[50%] hidden text-white lg:flex items-center justify-center  z-10 '>
-              <img src={Hero2.src} className='w-[500px] overflow-hidden lg:pt-2' alt='picture' />
+              <img src={Hero2.src} className='w-[500px] lg:w-[400px] xl:w-[500px] 2xl:[] overflow-hidden lg:pt-2' alt='picture' />
           </div>
           <div className='xs:order-2 lg:order-3 lg:w-[25%] h-[90%] text-white flex flex-col lg:gap-0 max-xs:gap-0 items-start justify-center z-10 xs:w-[100%] mt-10 xs:mt-6 lg:mt-0 '>
             <div className='flex xs:flex lg:flex-col gap-4 lg:gap-0 xs:gap-6 '>
               <div className='h-[33%] w-full xs:mt-4 lg:mt-0 flex flex-col items-start justify-between '>
-                <p className='text-[20px] xs:text-[20px] lg:text-[32px] font-semibold '>About me</p>
-                <p className='text-[10px] xs:text-[10px] lg:text-[13px] md:text-[13px] mt-2 h-20 xs:h-20 lg:full text-gray-400'>I am  a strategic leader specializing in driving growth, unlocking business potential, and expanding markets internationally in the furniture, luxury home interiors, and construction industries.</p>
-                <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center border-gray-500 border-b'>
+                <p className='text-[20px] xs:text-[20px] lg:text-[20px] xl:text-[32px] font-semibold'>About me</p>
+                <p className='text-[10px] xs:text-[10px] 2xl:text-[14px] lg:text-[12px] md:text-[13px] mt-2 h-20 xs:h-20 lg:full text-gray-400'>Specializing in driving growth, unlocking business potential, and expanding markets internationally in the furniture, luxury home interiors, and construction industries.</p>
+                <div className='mt-8 mb-4 lg:mt-8 lg:mb-4 text-[#a8a8a8] flex items-center justify-center border-gray-500 border-b'>
                   <a 
                     href="#about_me"
                     className=''>Learn More</a>
@@ -53,8 +53,8 @@ const Hero = () => {
                 </div>
               </div>
               <div className='h-[33%] w-full xs:mt-4 flex flex-col items-start justify-between' >
-                <p className='text-[20px] xs:text-[20px] lg:text-[32px]  font-semibold'>My Work</p>
-                <p className='text-[10px] xs:text-[10px] lg:text-[13px] md:text-[13px] mt-2 h-20 xs:h-20 lg:h-full text-gray-400'>I drive growth, unlock business potential, and expand markets internationally in the furniture, luxury home interiors, and construction industries.</p>
+                <p className='text-[20px] xs:text-[20px] lg:text-[20px] xl:text-[32px] font-semibold'>My Work</p>
+                <p className='text-[10px] xs:text-[10px] lg:text-[12px] md:text-[13px] mt-2 h-20 xs:h-20 lg:h-full text-gray-400'>I drive growth, unlock business potential, and expand markets internationally in the furniture, luxury home interiors, and construction industries.</p>
                 <div className='mt-8 mb-4 text-[#a8a8a8] flex items-center justify-center border-gray-500 border-b'>
                   <a 
                     href="#work"
@@ -63,7 +63,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className='h-[33%] w-full flex flex-col items-start gap-5 mt-6 text-[20px] lg:text-[32px] xs:text-[20px] font-semibold '>
+            <div className='h-[33%] w-full flex flex-col items-start gap-5 mt-6 text-[20px] lg:text-[20px] xl:text-[32px] xs:text-[20px] font-semibold '>
               <p>Follow me</p>
               <div className='flex items-center justify-start gap-2 lg:gap-5'>
                   {socialLinks.map(({ href, icon, ariaLabel }) => (

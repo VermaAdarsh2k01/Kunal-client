@@ -27,7 +27,7 @@ export const Features1 = () => {
                 <span className=" text-[#075FE4] font-black text-2xl">/</span>
                 <p className=" text-2xl font-bold text-white">About me</p>
               </div>
-              <h2 className="mt-16 xs:mt-20 lg:mt-32 w-[80%] mb-8 text-xl lg:text-5xl xs:text-[24px] font-extrabold text-white">
+              <h2 className="mt-16 xs:mt-20 lg:mt-32 w-[80%] mb-8 text-xl lg:text-3xl xs:text-[24px] xl:text-5xl font-extrabold text-white">
                 I'am a Business & Workplace Specialist
               </h2>
               <p className="mb-10 text-secondaryText text-sm lg:text-lg xs:text-sm md:text-lg md:leading-6">
@@ -36,19 +36,19 @@ export const Features1 = () => {
               <div className="w-full h-1 border-b-2 border-white/20"></div>
                 <div className="flex w-full mt-12 lg:mt-20 xs:mt-12 gap-2 xs:gap-8">
                   <div className="flex w-1/2  items-center justify-center gap-2">
-                    <p className="font-black text-white text-3xl lg:text-6xl xs:text-4xl md:text-6xl">25</p>
-                    <span className="font-black text-[#075FE4] text-2xl lg:text-6xl xs:text-4xl">+</span>
+                    <p className="font-black text-white text-3xl lg:text-5xl xl:text-6xl xs:text-4xl md:text-6xl">25</p>
+                    <span className="font-black text-[#075FE4] text-2xl  xs:text-4xl">+</span>
                     <p className="font-semibold text-white text-[12px] lg:text-xl xs:text-sm md:text-base">years of experience</p>
                   </div>
                   <div className="flex w-1/2  items-center justify-center gap-2">
-                    <p className="font-black text-white text-3xl lg:text-6xl xs:text-4xl md:text-6xl">125</p>
-                    <span className="font-black text-[#075FE4] text-2xl lg:text-6xl xs:text-4xl">+</span>
+                    <p className="font-black text-white text-3xl lg:text-5xl xl:text-6xl xs:text-4xl md:text-6xl">125</p>
+                    <span className="font-black text-[#075FE4] text-2xl lg:text-5xl xl:text-6xl xs:text-4xl">+</span>
                     <p className="font-semibold text-white text-[12px] lg:text-xl xs:text-sm md:text-base">Successful projects</p>
                   </div>
                 </div>
             </div>
           </div>
-          <div className="hidden w-3/4 mx-auto lg:w-1/3 lg:flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center items-start lg:pl-4 xl:px-8 h-full">
+          <div className="hidden w-3/4 mx-auto lg:w-1/3 lg:flex flex-wrap lg:-mx-4  sm:pr-8 lg:pr-0  lg:pl-0 lg:pt-10 justify-center items-start  xl:px-8 h-full">
             <img src={Interior.src} alt="about pic" className="mt-20"/>
           </div>
         </div>
