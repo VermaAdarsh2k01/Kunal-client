@@ -22,9 +22,9 @@ const BusinessConsultancy = () => {
                     </div>
                 </div>
             </div>
-            <div className="xs:w-[100%] lg:w-[45%] lg:mt-12 xs:mt-24 px-4 lg:px-0">
-                <p className="text-white font-extrabold xs:text-2xl lg:text-4xl text-nowrap">Business Consultancy</p>
-                <p className="xs:mt-10 lg:mt-12 text-sm lg:text-base text-gray-400 ">As a seasoned business consultant with over 25 years of expertise, I specialize in driving growth and expanding market presence across diverse industries including furniture, luxury home interiors, and construction. My consultancy focuses on strategic planning, market expansion, and innovative business solutions tailored to achieve sustainable success and enhance brand resilience in competitive markets.</p>
+            <div className="xs:w-[100%] lg:w-[45%] mt-14 lg:mt-12 xs:mt-24 px-4 lg:px-0 ">
+                <p className="text-white font-extrabold text-2xl xs:text-2xl lg:text-4xl text-nowrap">Business Consultancy</p>
+                <p className="mt-10 xs:mt-10 lg:mt-12 text-sm lg:text-base text-gray-400 ">As a seasoned business consultant with over 25 years of expertise, I specialize in driving growth and expanding market presence across diverse industries including furniture, luxury home interiors, and construction. My consultancy focuses on strategic planning, market expansion, and innovative business solutions tailored to achieve sustainable success and enhance brand resilience in competitive markets.</p>
                 <button className="rounded-xl px-4 py-2 mt-10 text-white bg-[#1E1D25]">
                     Book a call
                 </button>

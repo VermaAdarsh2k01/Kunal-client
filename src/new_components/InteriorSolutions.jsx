@@ -24,7 +24,7 @@ const InteriorSolutions = () => {
             </div>
             <div className="xs:w-[100%] lg:w-[45%] lg:mt-12 xs:mt-24 px-4 lg:px-0">
                 <p className="text-white font-extrabold xs:text-2xl lg:text-4xl text-nowrap">Interior Soultions</p>
-                <p className="xs:mt-10 lg:mt-12 text-sm lg:text-base text-gray-400 ">As a seasoned business consultant with over 25 years of expertise, I specialize in driving growth and expanding market presence across diverse industries including furniture, luxury home interiors, and construction. My consultancy focuses on strategic planning, market expansion, and innovative business solutions tailored to achieve sustainable success and enhance brand resilience in competitive markets.</p>
+                <p className="xs:mt-10 lg:mt-12 text-sm lg:text-base text-gray-400 ">As an accomplished leader in the interior solutions industry, I, Kunal Trehan, bring over 25 years of dynamic experience in driving double-digit growth and expanding into new market avenues. My expertise lies in unlocking business potential through strategic planning, business growth roadmaps, and assessing market dynamics. I have successfully established brands in competitive environments, including office furniture, luxury home furniture, modular kitchens, interiors, and construction.</p>
                 <button className="rounded-xl px-4 py-2 mt-10 text-white bg-[#1E1D25]">
                     Book a call
                 </button>
