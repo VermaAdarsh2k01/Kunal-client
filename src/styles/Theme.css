@@ -57,3 +57,56 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+
+
+.navbar-toggler{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  outline: none !important;
+  overflow: hidden;
+  transition: 0.2s all ease;
+  padding-left: 10px;
+  position: relative;
+  z-index: 2;
+  box-shadow: none !important;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: -16px;
+}
+
+.navbar-toggler svg{
+  cursor: pointer;
+  transform: translate3d(-10px, -2px, 0) scale(1.4);
+  width: 47px;
+  height: 47px;
+}
+
+.navbar-toggler svg path{
+  fill: none;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 22px;
+  stroke-linecap: round;
+  stroke: currentColor;
+  stroke-dashoffset: 0px;
+}
+
+.navbar-toggler svg path#top,
+.navbar-toggler svg path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+
+.navbar-toggler svg path#middle {
+  stroke-dasharray: 240px 240px;
+}
+
+.navbar-toggler.expanded svg path#top,
+.navbar-toggler.expanded svg path#bottom {
+  stroke-dashoffset: -650px;
+}
+
+.navbar-toggler.expanded svg path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
+}

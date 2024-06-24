@@ -3,7 +3,7 @@ import {blogData} from "../data/blogData"
 import { FaArrowUp } from 'react-icons/fa';
 
 const BlogList = ({ blogData }) => {
-    
+    console.log(blogData)
   return (
     <section
       className="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 relative" 
@@ -38,7 +38,7 @@ const BlogList = ({ blogData }) => {
                     <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">{post.title}</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={post.image.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={post.image} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
                 </div>
             </a>
           </div>

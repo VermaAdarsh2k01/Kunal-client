@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import signature from "../assets/images/signature.png"
 // import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
+import SvgButton from './SvgButton';
 
 const navbarLinks = [
     { label: "Blog", href: "/Blogs", ariaLabel: "blog" },
@@ -18,10 +19,10 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-screen h-20 flex justify-center items-center fixed z-50 rounded-2xl lg:mt-5 xs:mt-2"
+      className="w-screen xs:h-20 flex justify-center items-center fixed z-50 rounded-2xl  mt-0 lg:mt-5 xs:mt-2"
       aria-label="Main navigation"
     >
-        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] flex bg-[#161616] justify-between items-center relative lg:h-full xs:py-2 rounded-full px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
+        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] lg:w-[83%] w-[100%] flex bg-[#161616] justify-between items-center relative lg:h-full  xs:py-2 rounded-full px-6 xs:px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -31,7 +32,7 @@ export const Navbar = () => {
             <a href="/#home" aria-label="Home">
                 <div className="flex justify-start items-center grow basis-0">
                 
-                <img src={signature.src} className="lg:w-24 xs:w-[70%] text-white" alt="logo"/>
+                <img src={signature.src} className="lg:w-24 xs:w-[70%] w-[60%] text-white" alt="logo"/>
                 </div>
             </a>
             </motion.div>
@@ -56,12 +57,10 @@ export const Navbar = () => {
                 </div>
             </motion.div>
             <div
-            className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2"
+            className="lg:hidden flex flex-col rounded-md cursor-pointer "
             onClick={() => setIsOpen(!isOpen)}
             >
-            <div className="w-5 h-0.5 bg-gray-500  mb-1"></div>
-            <div className="w-5 h-0.5 bg-gray-500  mb-1"></div>
-            <div className="w-5 h-0.5 bg-gray-500 "></div>
+              <SvgButton/>
             </div>
         </div>
     <AnimatePresence>
@@ -73,12 +72,12 @@ export const Navbar = () => {
             exit={{ opacity: 0 }}
           >
             <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-bgDark1 z-50 w-full items-center gap-8 pb-10 border-y border-solid border-bgDark3 pt-10"
+              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-bgDark1 z-50 w-full h-screen  items-center gap-8 pb-10 border-y border-solid border-bgDark3 pt-10"
             >
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
                   key={href}
-                  className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                  className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300  pt-2"
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}
