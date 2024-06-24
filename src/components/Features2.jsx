@@ -76,20 +76,20 @@ export const Features2 = () => (
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16  xs:mb-0">
           <div className="w-full lg:mb-0 h-full">
-            <div className="mx-2 lg:mx-auto xs:mx-2 w-[100%] xs:w-[100%] sm:w-[100%] md:w-3/4 lg:w-[85%] min-h-screen flex flex-col xs:items-start jsutify-center mb-20 ">
+            <div className="mx-2 lg:mx-auto xs:mx-2 w-[100%] xs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[85%] min-h-screen flex flex-col xs:items-start jsutify-center mb-20 ">
               <p className="text-2xl  xs:text-2xl lg:text-3xl text-white font-black lg:mt-20 xs:mt-0 mb-10 xs:mb-10 lg:mb-0">Professional Journey</p>
               <div className="w-full lg:px-36 xs:px-0 flex flex-col xs:flex-row mt-12 lg:mt-24 xs:mt-12 items-center xs:items-start justify-center gap-8  xs:gap-8 lg:gap-10">
                 <img src={Feat2_1.src} className="w-[45%] xs:w-[45%] lg:w-[40%] rounded-3xl"/>
                 <div className="w-[100%] xs:w-[40%] flex flex-col items-start justify-between lg:mt-14 xs:mt-0 ">
-                  <p className="text-white lg:text-2xl xs:text-lg font-bold"> <span className=" text-[#075FE4] font-black text-2xl">/</span> How i started</p>
-                  <p className=" mt-3 lg:leading-[20px] text-[14px] xs:text-[14px] lg:text-base text-gray-400">My journey began with a passion for transforming spaces and creating functional yet elegant environments. Starting as a junior sales executive in the furniture industry, I quickly climbed the ranks by consistently delivering innovative solutions and driving significant sales growth. </p>
+                  <p className="text-white lg:text-2xl xs:text-lg md:text-2xl font-bold"> <span className=" text-[#075FE4] font-black text-2xl">/</span> How i started</p>
+                  <p className=" mt-3 lg:leading-[20px] text-[14px] xs:text-[14px] lg:text-base md:text-[18px] text-gray-400">My journey began with a passion for transforming spaces and creating functional yet elegant environments. Starting as a junior sales executive in the furniture industry, I quickly climbed the ranks by consistently delivering innovative solutions and driving significant sales growth. </p>
                 </div>
               </div>
               <div className="w-full lg:px-36 xs:px-0 flex flex-col xs:flex-row-reverse mt-20 lg:mt-10 xs:mt-20  items-center xs:items-start justify-center gap-8 xs:gap-8 lg:gap-10">
                 <img src={Feat2_2.src} className="w-[45%] xs:w-[45%] lg:w-[40%] rounded-3xl"/>
                 <div className="w-[100%] xs:w-80  flex flex-col items-start justify-between lg:mt-32 xs:mt-0">
-                  <p className="text-white lg:text-2xl xs:text-lg font-bold"> <span className=" text-[#075FE4] font-black text-2xl mr-1">/</span>My Journey</p>
-                  <p className="text-gray-400  lg:leading-[20px] text-[14px] xs:text-[14px] lg:text-base mt-3">Over the years, I honed my skills in strategic planning, leadership, and market expansion, ultimately establishing myself as a specialist in the furniture, luxury home interiors, and construction industries.</p>
+                  <p className="text-white lg:text-2xl xs:text-lg font-bold md:text-2xl"> <span className=" text-[#075FE4] font-black text-2xl mr-1">/</span>My Journey</p>
+                  <p className="mt-3 lg:leading-[20px] text-[14px] xs:text-[14px] lg:text-base md:text-[18px] text-gray-400">Over the years, I honed my skills in strategic planning, leadership, and market expansion, ultimately establishing myself as a specialist in the furniture, luxury home interiors, and construction industries.</p>
                 </div>
               </div>
             </div>

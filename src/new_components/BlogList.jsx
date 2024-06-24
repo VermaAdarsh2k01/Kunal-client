@@ -3,7 +3,7 @@ import {blogData} from "../data/blogData"
 import { FaArrowUp } from 'react-icons/fa';
 
 const BlogList = ({ blogData }) => {
-    console.log(blogData)
+    
   return (
     <section
       className="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 relative" 
@@ -13,7 +13,7 @@ const BlogList = ({ blogData }) => {
         <div className='flex items-start justify-between mx-6 lg:mx-20 xs:mx-6 mt-32 xs:mt-20 lg:mt-20'>
             <h1 className="text-xl lg:text-4xl xs:text-xl font-bold lg:mb-12 xs:mb-24 text-white z-10">Blog & Articles</h1>
             <div className='z-20 flex flex-col items-end justify-center'>
-                <div className='w-14 h-2 xs:w-20 xs:h-2 bg-white mb-6 xs:mb-10 lg:mb-10'></div>
+                <div className='w-14 h-1 xs:w-20 xs:h-2 lg:2 bg-white mb-6 xs:mb-10 lg:mb-10'></div>
                 <div className='flex'>  
                   <p className='text-white font-semibold text-lg xs:text-xl lg:text-xl'>All</p>
                   <FaArrowUp className='rotate-45 ms-2 text-white hidden lg:block' size={24}/>
@@ -43,6 +43,7 @@ const BlogList = ({ blogData }) => {
             </a>
           </div>
         ))}
+
       </div>
     </section>
   );

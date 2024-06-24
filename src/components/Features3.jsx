@@ -12,7 +12,7 @@ import client3 from "../assets/images/client3.png"
 import SitAndGrow from "../assets/images/siteAndgrow.jpg"
 
 export const Features3 = () => (
-  <section className="w-full bg-gradient-to-b from-[#1B1F24] to-[#282E36] via-[#1B1F24] pb-10 xs:pb-10 xs:pb-0pt-4">
+  <section className="w-full bg-gradient-to-b from-[#1B1F24] to-[#282E36] via-[#1B1F24] pb-10 md:pb-32 xs:pb-10 xs:pb-0pt-4">
     {/* <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -74,7 +74,7 @@ export const Features3 = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="w-screen min-h-screen lg:px-32 px-6 xs:px-6 pt-10">
+        <div className="w-screen min-h-screen lg:px-32 px-6 xs:px-6 md:px-18 pt-10">
             <div className="flex items-center justify-start gap-2">
                 <span className=" text-[#075FE4] font-black text-2xl">/</span>
                 <p className=" text-2xl font-bold text-white">Author</p>

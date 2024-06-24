@@ -42,10 +42,10 @@ export const Navbar = () => {
                 transition={{ duration: 0.3 }}
                 exit={{ opacity: 0 }}
                 >
-                <div className="hidden lg:flex h-full pl-12 pb-2">
+                <div className="hidden lg:flex h-full pl-12 pb-2 lg:gap-4">
                     {navbarLinks.map(({ href, label, ariaLabel }) => (
                     <a
-                        className="text-white lg:text-sm text-lg leading-6 mr-1 ml-1 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                        className="text-white lg:text-base text-lg leading-6 mr-1 ml-1 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                         href={href}
                         aria-label={ariaLabel}
                         key={label}
@@ -72,7 +72,7 @@ export const Navbar = () => {
             exit={{ opacity: 0 }}
           >
             <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-bgDark1 z-50 w-full h-screen  items-center gap-8 pb-10 border-y border-solid border-bgDark3 pt-10"
+              className="flex flex-col mt-8 xs:mt-14 lg:mt-16  lg:hidden absolute top-4 left-0  bg-[#161616] z-50 w-full h-screen  items-center gap-8 pb-10 border-y border-solid border-bgDark3 pt-10"
             >
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
