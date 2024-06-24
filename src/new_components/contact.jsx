@@ -6,21 +6,21 @@ const Contact = () => {
       id="contact"
     >
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] z-1" />
-            <div className='w-full flex flex-col items-start justify-center lg:px-32'>
-                <div className='lg:w-32 xs:w-24 h-2 bg-white mb-10 z-10'></div>
-                    <p className='text-white lg:text-5xl z-10 font-bold xs:text-2xl'>Let's Work Together</p>
-                    <p className='text-gray-400 z-10 lg:mt-6 xs:mt-2'>Complete the details below so we can process your request and then schedule a time to discuss your goals.</p>
-                    <button className='bg-white lg:px-4 lg:py-2 xs:px-2 xs:py-1 mt-8 rounded-full font-bold lg:text-2xl xs:text-lg z-10' >Book a call</button>
+            <div className='w-full flex flex-col items-start justify-center px-4 lg:px-32'>
+                <div className='w-16 lg:w-32 xs:w-24 h-2 bg-white mb-10 z-10'></div>
+                    <p className='text-white text-2xl lg:text-5xl z-10 font-bold xs:text-2xl'>Let's Work Together</p>
+                    <p className='text-gray-400 text-sm z-10 lg:mt-6 mt-2 xs:mt-2'>Complete the details below so we can process your request and then schedule a time to discuss your goals.</p>
+                    <button className='bg-white px-2 py-1 lg:px-4 lg:py-2 xs:px-2 xs:py-1 mt-8 rounded-full font-bold lg:text-2xl xs:text-lg z-10' >Book a call</button>
                 </div>
         <div className='h-[50vh]'>
             {/* client testimonials */}
         </div>
-        <div className='w-full flex items-start justify-center gap-10 px-32 mb-24'>
-            <div className='w-1/2'>
-                <p className='text-white text-5xl z-10 font-bold'>Get in touch with me</p>
+        <div className='w-full lg:flex lg:items-start justify-center gap-10 px-8 lg:px-32 mb-24 relative'>
+            <div className='xs:w-full lg:w-1/2 '>
+                <p className='text-white text-2xl lg:text-5xl z-10 font-bold'>Get in touch with me</p>
                 <p className='text-gray-400 z-10 mt-6'>Explore my journey and expertise—connect for transformative business insights today!</p>
             </div>
-            <div className='w-1/2 rounded-2xl px-16 py-14 bg-[#2d343f]'>
+            <div className='w-full lg:w-1/2 rounded-2xl px-1 py-6 lg:px-16 lg:py-14 mt-10 lg:mt-0 bg-[#2d343f]'>
             <form className="p-4 z-50">
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-400">Enter Your Name</label>
