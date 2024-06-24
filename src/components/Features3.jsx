@@ -80,7 +80,7 @@ export const Features3 = () => (
                 <p className=" text-2xl font-bold text-white">Author</p>
             </div>
             <div className="max-xs:flex-col lg:flex  items-center lg:justify-between mt-20 gap-20 ">
-                <div className="lg:w-[60%] xs:w-[100%]">
+                <div className="sm:w-[100%] lg:w-[60%] xs:w-[100%]">
                     <img src={SitAndGrow.src} className=" w-[100%] lg:w-[90%] xs:w-[100%]"/>
                 </div>
                 <div className="w-[100%] lg:w-[40%] xs:w-[100%] flex flex-col items-center lg:items-start xs:items-center justify-center mt-20 lg:mt-0 xs:mt-20 gap-6 lg:gap-20 xs:gap-6">

@@ -11,7 +11,7 @@ import Interior from "../assets/images/Mask group (1).png"
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-gradient-to-t  to-[#282E36]  from-[#1B1F24] pt-24 -mt-8  sm:-mt-8  xl:-mt-8 2xl:mt-0  md:pt-[12vw] lg:pt-16 xs: xs:pt-18 min-h-screen "
+      className="w-full bg-gradient-to-t  to-[#282E36]  from-[#1B1F24] pt-24 -mt-8  sm:-mt-8  xl:-mt-8 2xl:mt-0  md:pt-[12vw]  lg:pt-16 xs:pt-18 min-h-screen "
       id="about_me"
     >
       <motion.div
@@ -34,16 +34,16 @@ export const Features1 = () => {
               As a Business and Workspace Specialist, I excel in driving growth and expanding markets internationally. With expertise in furniture, luxury home interiors, and construction industries, I unlock business potential through strategic planning, robust leadership, and innovative market-entry strategies, delivering exceptional results in highly competitive environments.
               </p>
               <div className="w-full h-1 border-b-2 border-white/20"></div>
-                <div className="flex w-full mt-12 lg:mt-20 xs:mt-12 gap-8">
+                <div className="flex w-full mt-12 lg:mt-20 xs:mt-12 gap-2 xs:gap-8">
                   <div className="flex w-1/2  items-center justify-center gap-2">
-                    <p className="font-black text-white text-4xl lg:text-6xl xs:text-4xl">25</p>
-                    <span className="font-black text-[#075FE4] text-4xl lg:text-6xl xs:text-4xl">+</span>
-                    <p className="font-semibold text-white lg:text-xl xs:text-sm">years of experience</p>
+                    <p className="font-black text-white text-3xl lg:text-6xl xs:text-4xl">25</p>
+                    <span className="font-black text-[#075FE4] text-2xl lg:text-6xl xs:text-4xl">+</span>
+                    <p className="font-semibold text-white text-[12px] lg:text-xl xs:text-sm">years of experience</p>
                   </div>
                   <div className="flex w-1/2  items-center justify-center gap-2">
-                    <p className="font-black text-white text-4xl lg:text-6xl xs:text-4xl">125</p>
-                    <span className="font-black text-[#075FE4] text-4xl lg:text-6xl xs:text-4xl">+</span>
-                    <p className="font-semibold text-white lg:text-xl xs:text-sm">Successful projects</p>
+                    <p className="font-black text-white text-3xl lg:text-6xl xs:text-4xl">125</p>
+                    <span className="font-black text-[#075FE4] text-2xl lg:text-6xl xs:text-4xl">+</span>
+                    <p className="font-semibold text-white text-[12px] lg:text-xl xs:text-sm">Successful projects</p>
                   </div>
                 </div>
             </div>

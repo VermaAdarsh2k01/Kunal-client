@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     
     <section
-      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-0 sm:pb-32 md:pb-44 lg:pb-0 pt-32 lg:pt-36 xs:pt-32 xs:pb-0 overflow-hidden  px-10 relative" 
+      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-0 sm:pb-0 md:pb-44 lg:pb-0 pt-32 lg:pt-36 xs:pt-32 xs:pb-0 overflow-hidden  px-4 xs:px-10 relative" 
       id="home"
     >
       
@@ -41,7 +41,7 @@ const Hero = () => {
               <img src={Hero2.src} className='w-[500px] overflow-hidden lg:pt-2' alt='picture' />
           </div>
           <div className='xs:order-2 lg:order-3 lg:w-[25%] h-[90%] text-white flex flex-col lg:gap-0 max-xs:gap-0 items-start justify-center z-10 xs:w-[100%] mt-10 xs:mt-6 lg:mt-0 '>
-            <div className='flex xs:flex lg:flex-col gap-0 xs:gap-6 '>
+            <div className='flex xs:flex lg:flex-col gap-4 lg:gap-0 xs:gap-6 '>
               <div className='h-[33%] w-full xs:mt-4 lg:mt-0 flex flex-col items-start justify-between '>
                 <p className='text-[20px] xs:text-[20px] lg:text-[32px] font-semibold '>About me</p>
                 <p className='text-[10px] xs:text-[10px] lg:text-[13px] mt-2 h-20 xs:h-20 lg:full text-gray-400'>I am  a strategic leader specializing in driving growth, unlocking business potential, and expanding markets internationally in the furniture, luxury home interiors, and construction industries.</p>

@@ -13,8 +13,8 @@ const Achievement = () => {
                 <p className='text-2xl xs:text-2xl lg:text-4xl text-white font-bold'>Achievements</p>
                 <p className='text-[16px] xs:text-[14px] lg:text-[20px] leading-none text-gray-500' >Recognized for transformative leadership, driving double-digit growth, and expanding global market presence across multiple industries</p>
             </div>
-            <div className='flex items-center justify-center px-16 lg:px-80 xs:px-32 mt-10 '>
-                <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-4 ">
+            <div className='flex items-center justify-center px-16 lg:px-80 xs:px-32 sm:px-16 mt-10 '>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 ">
                     <div className="bg-[#2e3442] px-4 py-6 rounded-lg shadow-lg flex flex-col items-start justify-between gap-20">
                         <div className='w-12 h-12 xs:w-12 xs:h-12 bg-white rounded-xl'>
                             
