@@ -25,9 +25,9 @@ export const Features1 = () => {
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <div className="flex items-center justify-start gap-2">
                 <span className=" text-[#075FE4] font-black text-2xl">/</span>
-                <p className=" text-2xl font-bold text-white">About me</p>
+                <p className=" text-2xl xl:text-4xl font-bold text-white">About me</p>
               </div>
-              <h2 className="mt-16 xs:mt-20 lg:mt-32 w-[80%] mb-8 text-xl lg:text-3xl xs:text-[24px] xl:text-5xl font-extrabold text-white">
+              <h2 className="mt-16 xs:mt-20 lg:mt-32 w-[80%] mb-8 text-xl lg:text-3xl xs:text-[24px] xl:text-4xl font-extrabold text-white">
                 I'am a Business & Workplace Specialist
               </h2>
               <p className="mb-10 text-secondaryText text-sm lg:text-lg xs:text-sm md:text-lg md:leading-6">

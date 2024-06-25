@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState , useContext} from "react";
+
 
 export const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,9 +24,11 @@ export const ScrollUpButton = () => {
     });
   };
 
+
+
   return (
     <>
-      {isVisible && (
+      {isVisible &&  (
         <button
           className="w-12 h-12 fixed bottom-6 right-6 main-border-gray rounded-xl  bg-bgDark2 hover:bg-bgDark3 cursor-pointer flex justify-center items-center transition z-50"
           onClick={scrollToTop}

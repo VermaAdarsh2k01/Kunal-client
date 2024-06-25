@@ -38,7 +38,7 @@ const BlogList = ({ blogData }) => {
                     <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">{post.title}</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={post.image} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={post.image.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
                 </div>
             </a>
           </div>

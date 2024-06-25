@@ -4,6 +4,7 @@ import signature from "../assets/images/signature.png"
 // import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 import SvgButton from './SvgButton';
+import { ScrollUpButton } from '../components/ScrollUpButton';
 
 const navbarLinks = [
     { label: "Blog", href: "/Blogs", ariaLabel: "blog" },
@@ -16,13 +17,17 @@ const navbarLinks = [
 
 export const Navbar = () => {
     const [isOpen , setIsOpen] = useState(false)
+    
+    const toggleMenu = () => {
+      setIsOpen(!isOpen)
+    }
 
   return (
     <nav
-      className="w-screen xs:h-20 flex justify-center items-center fixed z-50 rounded-2xl  mt-0 lg:mt-5 xs:mt-2"
+      className="w-screen xs:h-20 flex justify-center items-center fixed z-50 rounded-none lg:rounded-2xl  mt-0 lg:mt-5 xs:mt-2"
       aria-label="Main navigation"
     >
-        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] lg:w-[83%] w-[100%] flex bg-[#161616] justify-between items-center relative lg:h-full  xs:py-2 rounded-full px-6 xs:px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
+        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] lg:w-[83%] w-[100%] flex bg-[#161616] justify-between items-center relative lg:h-full  xs:py-2 rounded-none lg:rounded-full px-6 xs:px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -79,26 +84,17 @@ export const Navbar = () => {
                   key={href}
                   className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300  pt-2"
                   href={href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={toggleMenu}
                   aria-label={ariaLabel}
                   target="_blank"
                 >
                   {label}
                 </a>
               ))}
-              {/* <a
-                className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a> */}
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-        
 
     </nav>
   )
