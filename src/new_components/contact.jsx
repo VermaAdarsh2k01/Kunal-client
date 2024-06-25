@@ -1,3 +1,4 @@
+import { Testimonials } from "../components/Testimonials"
 
 const Contact = () => {
   return (
@@ -12,8 +13,8 @@ const Contact = () => {
                     <p className='text-gray-400 text-sm z-10 lg:mt-6 mt-2 xs:mt-2'>Complete the details below so we can process your request and then schedule a time to discuss your goals.</p>
                     <button className='bg-gradient-to-r from-[#27252F] to-[#3B3947] text-white bg-opacity-50 backdrop-filter backgrop-blur-2xl px-2 py-1 lg:px-4 lg:py-2 xs:px-2 xs:py-1 mt-8 rounded-full font-bold lg:text-lg xs:text-lg z-10' >Book a call</button>
                 </div>
-        <div className='h-[30vh]'>
-            {/* client testimonials */}
+        <div className='h-full'>
+            <Testimonials/>
         </div>
         <div className='w-full lg:flex lg:items-start justify-center gap-10 px-3 md:px-20 lg:px-32 mb-24 relative'>
             <div className='xs:w-full lg:w-1/2 '>

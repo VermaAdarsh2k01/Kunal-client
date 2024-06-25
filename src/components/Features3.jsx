@@ -12,19 +12,19 @@ import client3 from "../assets/images/client3.png"
 import SitAndGrow from "../assets/images/siteAndgrow.jpg"
 
 export const Features3 = () => (
-  <section className="w-full bg-[#0A0A0A] pb-10 lg:pb-0 md:pb-32 xs:pb-10 xs:pb-0pt-4">
+  <section className="w-full bg-[#0A0A0A] pb-10 lg:0 md:pb-32 xs:pb-10 xs:pb-0pt-4">
     <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="w-screen  md:h-full  lg:px-16 px-6 xs:px-6 md:px-18 pt-10">
+        <div className="w-screen md:h-full lg:px-16 xl:px-44 px-6 xs:px-6 md:px-18 pt-10 xl:pb-10">
             <div className="flex items-center justify-start gap-2">
                 <span className=" text-[#075FE4] font-black text-2xl">/</span>
-                <p className=" text-2xl font-bold text-white">Author</p>
+                <p className=" text-2xl xl:text-4xl font-bold text-white">Author</p>
             </div>
-            <div className="max-xs:flex-col lg:flex md:flex items-center lg:justify-between mt-20 gap-20  md:gap-10 lg:gap-10">
+            <div className="max-xs:flex-col lg:flex md:flex items-center lg:justify-between mt-20 gap-20 md:gap-10 lg:gap-10">
                 <div className="sm:w-[100%] lg:w-[60%] xs:w-[100%] md:w-[60%]">
                     <img src={SitAndGrow.src} className=" w-[100%] md:w-[100%] lg:w-[90%] xs:w-[100%]"/>
                 </div>

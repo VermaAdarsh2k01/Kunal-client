@@ -2,6 +2,7 @@ import arrow from "../../src/assets/images/arrow.png"
 import BusinessConsultancyImg from "../assets/images/busconsImg.jpg"
 import LifestyleCoaching from "../assets/images/lifestyleImg.jpg"
 import InteriorSolutionImg from "../assets/images/interImg.jpg"
+import { Testimonials } from "../components/Testimonials"
 
 
 const Service = () => {
@@ -59,6 +60,9 @@ const Service = () => {
                     
                 </a>
                 </div>
+            </div>
+            <div className="h-full mt-24 relative opacity-100 z-10">
+                <Testimonials/>
             </div>
         <div className="  mt-20 lg:mt-40 xs:mt-20 px-2 lg:px-40 xs:px-6 mb-40 relative ">
             <div className="flex items-center justify-start gap-2 ">

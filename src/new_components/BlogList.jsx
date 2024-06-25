@@ -12,7 +12,7 @@ const BlogList = () => {
       id="home"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] z-1" />
-        <div className='flex items-start justify-between mx-6 lg:mx-20 xs:mx-6 mt-32 xs:mt-20 lg:mt-20'>
+        <div className='flex items-start justify-between md:justify-center xl:justify-between md:gap-72 lg:gap-96 mx-6 xl:mx-64 lg:mx-20 xs:mx-6 mt-32 xs:mt-20 lg:mt-20'>
             <h1 className="text-xl lg:text-4xl xs:text-xl font-bold lg:mb-12 xs:mb-24 text-white z-10">Blog & Articles</h1>
             <div className='z-20 flex flex-col items-end justify-center'>
                 <div className='w-14 h-1 xs:w-20 xs:h-2 lg:2 bg-white mb-6 xs:mb-10 lg:mb-10'></div>
@@ -31,9 +31,9 @@ const BlogList = () => {
             </div>
         </div>
        
-        <div className="flex flex-col items-center justify-center flex-wrap mt-20 min-h-screen gap-10">
+        <div className="flex flex-col items-center justify-center flex-wrap mt-20  gap-10">
         
-          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[65%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
@@ -44,7 +44,7 @@ const BlogList = () => {
                 </div>
             </a>
           </div>
-          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[65%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
@@ -55,7 +55,7 @@ const BlogList = () => {
                 </div>
             </a>
           </div>
-          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[65%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
