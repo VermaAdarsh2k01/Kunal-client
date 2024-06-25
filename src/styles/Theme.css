@@ -110,3 +110,7 @@
   stroke-dashoffset: -115px;
   stroke-dasharray: 1px 220px;
 }
+
+.gradient-border{
+  background-color: linear-gradient(90deg, rgba(152, 189, 255, 0) 0%, rgb(152, 189, 255) 50%, rgba(152, 189, 255, 0) 100%);
+}

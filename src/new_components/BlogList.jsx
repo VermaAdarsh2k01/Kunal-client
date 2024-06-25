@@ -33,36 +33,36 @@ const BlogList = () => {
        
         <div className="flex flex-col items-center justify-center flex-wrap mt-20 min-h-screen gap-10">
         
-          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
                     <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={Post1.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={Post1.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded- lg" />
                 </div>
             </a>
           </div>
-          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
                     <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={Post2.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={Post2.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-lg" />
                 </div>
             </a>
           </div>
-          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+          <div className=" w-[90%] md:w-[70%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
             <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
                     <p className="text-[#999999] font-bold ">March 18, 2024</p>
                     <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={Post3.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={Post3.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-lg" />
                 </div>
             </a>
           </div>

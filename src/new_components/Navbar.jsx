@@ -24,10 +24,10 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-screen xs:h-20 flex justify-center items-center fixed z-50 rounded-none lg:rounded-2xl  mt-0 lg:mt-5 xs:mt-2"
+      className="w-screen xs:h-20 flex justify-center items-center fixed z-50 rounded-none mt-0 lg:mt-5 xs:mt-2"
       aria-label="Main navigation"
     >
-        <div className='2xl:w-[800px] xl:w-10/12 xs:w-[60%] lg:w-[83%] w-[100%] flex bg-[#161616] justify-between items-center relative lg:h-full  xs:py-2 rounded-none lg:rounded-full px-6 xs:px-10 lg:backdrop-blur-xl  drop-shadow-lg '>
+        <div className='2xl:w-[55%] xl:w-[70%] xs:w-[60%] lg:w-[70%] w-[100%] flex bg-[#161616] justify-between items-center relative lg:h-full  xs:py-2 rounded-none sm:rounded-full px-6 xs:px-10 lg:backdrop-blur-sm  drop-shadow-lg '>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export const Navbar = () => {
                 <div className="hidden lg:flex h-full pl-12 pb-2 lg:gap-4">
                     {navbarLinks.map(({ href, label, ariaLabel }) => (
                     <a
-                        className="text-white lg:text-base text-lg leading-6 mr-1 ml-1 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                        className="text-white lg:text-base text-lg leading-6 mr-1 ml-1 2xl:mr-2 2xl:ml-2 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                         href={href}
                         aria-label={ariaLabel}
                         key={label}

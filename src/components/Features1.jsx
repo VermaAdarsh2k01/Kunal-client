@@ -11,7 +11,7 @@ import Interior from "../assets/images/Mask group (1).png"
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-gradient-to-t  to-[#282E36]  from-[#1B1F24] pt-24 -mt-8  sm:-mt-8  xl:-mt-8 2xl:mt-0  md:pt-[12vw]  lg:pt-16 xs:pt-18 min-h-screen "
+      className="w-full bg-[#0A0A0A] pt-24 -mt-8  sm:-mt-8  xl:-mt-8 2xl:mt-0  md:pt-[18vw] lg:pt-16 xs:pt-18 min-h-screen "
       id="about_me"
     >
       <motion.div
@@ -21,7 +21,7 @@ export const Features1 = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="lg:flex max-xs:flex-col-reverse items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16 h-full ">
-          <div className="w-full lg:w-2/3 xs:w-full mb-12 lg:mb-0 h-full">
+          <div className="w-full lg:w-2/3 xs:w-full  lg:mb-0 h-full">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <div className="flex items-center justify-start gap-2">
                 <span className=" text-[#075FE4] font-black text-2xl">/</span>
