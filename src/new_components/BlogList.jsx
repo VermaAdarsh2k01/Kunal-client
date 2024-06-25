@@ -1,12 +1,14 @@
 import React from 'react';
-import {blogData} from "../data/blogData"
 import { FaArrowUp } from 'react-icons/fa';
+import Post1 from '../assets/images/post1.png'
+import Post2 from '../assets/images/post2.png'
+import Post3 from '../assets/images/post3.png'
 
-const BlogList = ({ blogData }) => {
+const BlogList = () => {
     
   return (
     <section
-      className="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44 lg:pb-0 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 relative" 
+      className="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44  lg:pb-10 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 relative" 
       id="home"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] z-1" />
@@ -30,19 +32,41 @@ const BlogList = ({ blogData }) => {
         </div>
        
         <div className="flex flex-col items-center justify-center flex-wrap mt-20 min-h-screen gap-10">
-        {blogData.map((post) => (
-          <div key={post.slug} className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
-            <a href={`/blogs/${post.slug}`} className='flex items-center justify-between gap-10'>
+        
+          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+            <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
                 <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
-                    <p className="text-[#999999] font-bold ">{post.date}</p>
-                    <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">{post.title}</h2>
+                    <p className="text-[#999999] font-bold ">March 18, 2024</p>
+                    <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
                 </div>
                 <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
-                    <img src={post.image} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                    <img src={Post1.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
                 </div>
             </a>
           </div>
-        ))}
+          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+            <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
+                <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
+                    <p className="text-[#999999] font-bold ">March 18, 2024</p>
+                    <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
+                </div>
+                <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
+                    <img src={Post2.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                </div>
+            </a>
+          </div>
+          <div className="border w-[90%] lg:w-[50%] xs:w-[90%] lg:h-30 xs:h-30 p-4 rounded-lg shadow-lg text-white z-40 bg-[#2d333a]" >
+            <a href={`/blogs/`} className='flex items-center justify-between gap-10'>
+                <div className='w-2/3 lg:w-[45%] xs:w-[60%]'>
+                    <p className="text-[#999999] font-bold ">March 18, 2024</p>
+                    <h2 className="text-md lg:text-xl xs:text-xl font-bold mt-4">The Best IDE’s and Code Editors for Developers in 2022</h2>
+                </div>
+                <div className='w-1/3 xs:flex xs:items-center xs:justify-end'>
+                    <img src={Post3.src} className="w-28 h-32 lg:w-full lg:h-48 xs:w-28 xs:h-32 object-cover rounded-t-lg" />
+                </div>
+            </a>
+          </div>
+
 
       </div>
     </section>
