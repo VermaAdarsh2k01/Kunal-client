@@ -34,8 +34,8 @@ export const Footer = () => {
         <div className="container mx-auto w-[80%] md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3 ">
         <img src={divider.src} className=" mb-10"></img>
           <div className="flex flex-wrap">
-            <div className="w-full md:w-1/3 lg:w-1/3 mb-20 lg:mb-0">
-              <div className="flex justify-evenly md:justify-center lg:justify-start items-center grow basis-0">
+            <div className="w-full md:w-1/2 lg:w-1/3 mb-20 lg:mb-0">
+              <div className="flex justify-evenly md:justify-center lg:justify-start items-center  md:gap-2 grow basis-0">
                 <div className="text-white mr-4 lg:mr-2 text-6xl">
                   <img src={AboutPic.src} className="w-24"/>
                 </div>
@@ -68,7 +68,7 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-2/3 lg:w-2/3 lg:pl-16 flex lg:flex justify-between md:justify-center ">
+            <div className="w-full md:w-1/2 lg:w-2/3 lg:pl-16 flex lg:flex justify-between md:justify-center ">
               <div className="w-full md:w-1/2 lg:w-1/3 mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold hidden md:flex lg:text-lg text-primaryText">Navigate to</h3>
                 <ul>
@@ -118,7 +118,7 @@ export const Footer = () => {
                     <li className="mb-1 lg:mb-1">
                       <a
                         className="text-gray-400 hover:text-gray-300 text-sm"
-                        href="#testimonials "
+                        href="/#testimonials "
                       >
                         Testimonials
                       </a>
@@ -126,9 +126,33 @@ export const Footer = () => {
                     <li className="mb-1 lg:mb-1">
                       <a
                         className="text-gray-400 hover:text-gray-300 text-sm"
-                        href="#author "
+                        href="/#author "
                       >
                         Author
+                      </a>
+                    </li>
+                    <li className="mb-1 lg:mb-1">
+                      <a
+                        className="text-gray-400 hover:text-gray-300 text-sm"
+                        href="/Service/BusinessConsultancy"
+                      >
+                        Buisness Consultancy
+                      </a>
+                    </li>
+                    <li className="mb-1 lg:mb-1">
+                      <a
+                        className="text-gray-400 hover:text-gray-300 text-sm"
+                        href="/Service/LifestyleCoaching"
+                      >
+                        Lifestyle Coaching
+                      </a>
+                    </li>
+                    <li className="mb-1 lg:mb-1">
+                      <a
+                        className="text-gray-400 hover:text-gray-300 text-sm"
+                        href="/Service/InteriorSolutions"
+                      >
+                        Interior Solutions
                       </a>
                     </li>
                     

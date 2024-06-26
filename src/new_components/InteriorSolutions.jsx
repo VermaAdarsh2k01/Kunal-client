@@ -7,6 +7,7 @@ import Collage5 from "../assets/images/collage5.png";
 import Collage6 from "../assets/images/collage6.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { Testimonials } from "../components/Testimonials";
+import { Footer } from "../components/Footer";
 
 const BusinessConsultancy = () => {
   return (
@@ -133,6 +134,7 @@ const BusinessConsultancy = () => {
         <p className="text-2xl md:text-4xl px-4 xl:px-24 lg:px-4 md:px-10 font-black">Word of the clients</p>
         <Testimonials/>
       </div>
+      <Footer/>
     </section>
   );
 };
