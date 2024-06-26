@@ -10,6 +10,8 @@ import client1 from "../assets/images/client1.png"
 import client2 from "../assets/images/client2.png"
 import client3 from "../assets/images/client3.png"
 import {CarouselClient} from "../new_components/CarouselClient.jsx"
+import { Testimonials } from "./Testimonials.jsx";
+import divider from "../assets/images/Vector17.png"
 
 export const Features2 = () => (
   <section id="work" className="w-full bg-[#0A0A0A] xs:mb-0 pt-4 md:pt-32">
@@ -94,7 +96,8 @@ export const Features2 = () => (
               </div>
             </div>
             <div className="w-full flex items-center justify-center">
-              <div className="w-[100%] lg:w-[80%] xl:w-[50%] xs:w-[100%] border-b border-white/50"></div>
+            <img src={divider.src}></img>
+              {/* <div className="w-[100%] lg:w-[80%] xl:w-[50%] xs:w-[100%] border-b border-white/50"></div> */}
             </div>
             <div className=" w-full flex flex-col lg:flex xs:flex-col items-center justify-between py-10 lg:py-20 pt-8 lg:pt-8 xs:pt-8 xs:gap-10 xs:mb-5 lg:mb-0">
               <p className="text-2xl lg:text-3xl xs:text-2xl font-bold text-white ">Previously worked with</p>
@@ -103,5 +106,10 @@ export const Features2 = () => (
           </div>
         </div>
       </motion.div>
+      <div className="w-full px-0 " id="testimonials">      
+        <Testimonials/>
+      </div>
+
+
   </section>
 );

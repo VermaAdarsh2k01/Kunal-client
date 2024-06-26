@@ -4,6 +4,7 @@ import { QuoteIcon } from "../assets/icons/QuoteIcon";
 import testimonial1 from "../assets/images/testimonial1.png";
 import testimonial2 from "../assets/images/testimonial2.png";
 import testimonial3 from "../assets/images/testimonial3.png";
+import divider from "../assets/images/divider.png"
 
 const testimonialsData = [
   {
@@ -30,12 +31,10 @@ const testimonialsData = [
 ];
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center my-10 mb-16 lg:mb-10 relative">
+  <section className="w-full flex justify-center py-20 lg:pb-10 relative">
     <div className="absolute -top-16" id="feedback" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
-      
         
-
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {testimonialsData.map((testimonial, index) => (
             <div
@@ -44,7 +43,7 @@ export const Testimonials = () => (
             >
               
               <div className="text-white text-sm mt-2">"{testimonial.content}"</div>
-              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
+              <div className="flex mt-4 mb-2 xl:mt-4 xl:mb-4">
                 <div>
                   <img
                     src={testimonial.image.src}

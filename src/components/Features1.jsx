@@ -7,6 +7,7 @@ import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import AboutPic from "../assets/images/aboutPic.png"
 import Interior from "../assets/images/Mask group (1).png"
+import divider from "../assets/images/Vector17.png"
 
 export const Features1 = () => {
   return (
@@ -33,7 +34,8 @@ export const Features1 = () => {
               <p className="mb-10 text-secondaryText text-sm lg:text-lg xs:text-sm md:text-lg md:leading-6">
               As a Business and Workspace Specialist, I excel in driving growth and expanding markets internationally. With expertise in furniture, luxury home interiors, and construction industries, I unlock business potential through strategic planning, robust leadership, and innovative market-entry strategies, delivering exceptional results in highly competitive environments.
               </p>
-              <div className="w-full h-1 border-b-2 border-white/20"></div>
+              <img src={divider.src}></img>
+              {/* <div className="w-full h-1 border-b-2 border-white/20"></div> */}
                 <div className="flex w-full mt-12 lg:mt-20 xs:mt-12 gap-2 xs:gap-8">
                   <div className="flex w-1/2  items-center justify-center gap-2">
                     <p className="font-black text-white text-3xl lg:text-5xl xl:text-6xl xs:text-4xl md:text-6xl">25</p>

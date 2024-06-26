@@ -4,8 +4,8 @@ import Hero2 from '../assets/images/Hero2.png';
 import { FaArrowUp, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FacebookIcon } from '../assets/icons/FacebookIcon';
 import { InstagramIcon } from '../assets/icons/InstagramIcon';
-import { TailcastLogo } from '../assets/logos/TailcastLogo';
 import { TwitterIcon } from '../assets/icons/TwitterIcon';
+import xsHeroImg from "../assets/images/xsHeroImg.png"
 
 export const socialLinks = [
   { label: 'Facebook', href: 'https://facebook.com/your-profile', icon: <FacebookIcon />, ariaLabel: 'Facebook' },
@@ -19,15 +19,16 @@ const Hero = () => {
 
   return (
     <section
-      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-10 sm:pb-0 md:pb-0 lg:pb-0 pt-32 md:pt-16 lg:pt-24 xl:pt-32 xs:pt-32 xs:pb-0 overflow-hidden px-4 md:px-8 xs:px-10 relative"
+      className="w-screen lg:h-screen xs:min-h-screen flex justify-center items-center bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-10 sm:pb-0 md:pb-0 lg:pb-0 pt-32 md:pt-16 lg:pt-24 xl:pt-32 xs:pt-32 xs:pb-0 overflow-hidden px-4 md:px-8 xs:px-10 3xl:px-72 relative"
       id="home"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       <motion.div>
         <div className="w-full h-full max-xs:flex-col max-xs:gap-20 lg:flex relative lg:pt-16">
           <div className="xs:order-1 xs:flex lg:order-2 lg:w-[50%] xl:w-[50%] text-white lg:flex items-center justify-center z-10">
-            <div className="relative w-full flex justify-center items-center pb-6">
-                <img src={Hero2.src} className="w-[60%] sm:w-[40%] md:w-[40%] lg:w-[400px] xl:w-[500px] 2xl:[500px] overflow-hidden lg:pt-2" alt="picture" />
+            <div className="relative w-full flex justify-center items-center pb-8 ">
+                <img src={Hero2.src} className="hidden lg:block w-[60%] sm:w-[40%] md:w-[40%] lg:w-[400px] xl:w-[500px] 2xl:[500px] overflow-hidden lg:pt-2" alt="picture" />
+                <img src={xsHeroImg.src} className="lg:hidden w-[100%] sm:w-[40%] md:w-[40%] lg:w-[400px] xl:w-[500px] 2xl:[500px] overflow-hidden lg:pt-2 " alt="picture" />
                 <div className=" absolute bottom-0 left-0 right-0 inset-0 lg:hidden h-full bg-gradient-to-t from-black via-transparent to-transparent blur-[10px]" />
             </div>
           </div>

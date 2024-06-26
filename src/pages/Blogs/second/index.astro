@@ -1,0 +1,16 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { Navbar } from '../../../new_components/Navbar.jsx'
+import { Footer } from '../../../components/Footer.jsx'
+import '../../../styles/Theme.css'
+import { ScrollUpButton } from '../../../components/ScrollUpButton'
+import SecondBlog from '../../../new_components/SecondBlog.jsx';
+
+---
+
+<Layout >
+    <Navbar client:load />
+    <SecondBlog client:load />
+    <Footer />
+    <ScrollUpButton client:load />
+</Layout>

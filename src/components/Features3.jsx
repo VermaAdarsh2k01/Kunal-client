@@ -12,7 +12,7 @@ import client3 from "../assets/images/client3.png"
 import SitAndGrow from "../assets/images/siteAndgrow.jpg"
 
 export const Features3 = () => (
-  <section className="w-full bg-[#0A0A0A] pb-10 lg:0 md:pb-32 xs:pb-10 xs:pb-0pt-4">
+  <section className="w-full bg-[#0A0A0A] pb-10 lg:0 md:pb-32 xs:pb-10 xs:pb-0pt-4" id="author">
     <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
