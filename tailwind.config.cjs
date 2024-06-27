@@ -23,6 +23,7 @@ module.exports = {
         Inter: "Inter",
       },
       screens: {
+        xxs: "350px",
         xs: "530px",
         sm: "640px",
         md: "768px",
