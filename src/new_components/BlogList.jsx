@@ -4,7 +4,7 @@ import Post1 from '../assets/images/post1.jpeg'
 import Post2 from '../assets/images/post2.jpeg'
 import Post3 from '../assets/images/post3.jpeg'
 
-const BlogList = () => {
+const BlogList = ({post}) => {
     
   return (
     <section

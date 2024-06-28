@@ -1,0 +1,13 @@
+---
+import BlogPost from "../../new_components/BlogPost.jsx"
+import Layout from "../../layouts/Layout.astro";
+import { getPosts } from "../../api.js";
+
+const posts = await getPosts();
+---
+
+<Layout title="Welcome to Astro.">
+  <section>
+    {posts.length ? posts.map((post) => <BlogPost post={post}/> ) : <p>no Posts</p>}
+  </section>
+</Layout>
