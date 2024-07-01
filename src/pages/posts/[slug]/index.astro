@@ -1,0 +1,77 @@
+---
+import {Navbar} from "../../../new_components/Navbar.jsx"
+import BlogPost from '../../../new_components/BlogPost.jsx';
+import { PortableText } from "astro-portabletext";
+import { getPostBySlug } from '../../../api.js';
+import {getPosts} from '../../../api.js'
+import Layout from "../../../layouts/Layout.astro";
+import {urlFor} from "../../../api.js"
+
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({
+    params: { slug: post.slug.current },
+  }));
+}
+
+const { slug } = Astro.params;
+
+const post = await getPostBySlug(slug);
+---
+
+<Layout title={post.title}>
+<Navbar client:load/>
+  <section 
+        class="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44  lg:pb-10 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 relative" 
+    >
+      <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] z-1" />
+    <div class=" min-h-screen text-white mt-8 relative">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-8">
+      <div class="md:w-[50%] lg:w-[50%] xl:w-[40%] w-[90%] mx-auto  shadow-md overflow-hidden flex flex-col items-center justify-center">
+        <div class=" md:w-[100%] lg:w-[100%] 3xl:h-full sm:h-96 flex items-center justify-center">
+          <img
+            src={urlFor(post.mainImage).url()} 
+            alt="post image"
+            class="inset-0 w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+        <div class="p-6 text-center">
+          <h1 class="text-xl sm:text-4xl md:text-2xl lg:text-3xl  font-bold text-white mb-2">
+            {post.title}
+          </h1>
+          <p class="text-gray-400 text-sm sm:text-base mb-4">March 18, 2024</p>
+          <div class="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed mb-4">
+            {/* Your additional content here */}
+          </div>
+          <div class="flex justify-center gap-2">
+            {/* Add your tags here */}
+            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-200">
+              #Tag1
+            </span>
+            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-200">
+              #Tag2
+            </span>
+            <span class="bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-200">
+              #Tag3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
+      <div class="max-w-4xl mx-auto bg-gradient-to-r from-[#27252F] to-[#3B3947]  bg-opacity-50 backdrop-filter backgrop-blur-2xl rounded-lg shadow-md overflow-hidden p-6 md:p-6">
+        <h2 class="text-sm sm:text-3xl md:text-xl lg:text-xl text-white mb-4">
+            <PortableText value={post.body}
+          
+        </h2>
+        <div class="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed mb-4">
+          {/* Additional content goes here */}
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+</Layout>

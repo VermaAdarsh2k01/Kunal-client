@@ -1,0 +1,12 @@
+---
+import { SanityStudio } from '@sanity/studio';
+
+const config = {
+  projectId: '7ryphrdj',
+  dataset: 'production',
+  apiVersion: 'v1', // Use a specific date or 'v1' for the latest version
+  basePath: '/studio', // Optional: base path for your studio
+};
+---
+
+<SanityStudio config={config} />

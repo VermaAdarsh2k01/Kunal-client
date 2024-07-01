@@ -1,13 +1,45 @@
 ---
+import {Navbar} from "../../new_components/Navbar.jsx"
 import BlogPost from "../../new_components/BlogPost.jsx"
 import Layout from "../../layouts/Layout.astro";
 import { getPosts } from "../../api.js";
+import {FaArrowUp} from 'react-icons/fa'
+import {Footer} from "../../components/Footer.jsx"
 
 const posts = await getPosts();
 ---
 
 <Layout title="Welcome to Astro.">
-  <section>
+<Navbar client:load/>
+<section
+      class="w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-24 sm:pb-32 md:pb-44  lg:pb-10 lg:pt-32 xs:pt-24 min-h-screen overflow-hidden lg:px-10 xs:px-4 3xl:px-56 relative" 
+      id="Blog_page"
+    >
+      <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] z-1" />
+        <div class='flex items-start justify-between md:justify-center xl:justify-between md:gap-72 lg:gap-96 mx-6 xl:mx-64 3xl:mx-90 lg:mx-20 xs:mx-6 mt-32 xs:mt-20 lg:mt-20'>
+            <h1 class="text-xl lg:text-4xl xs:text-xl font-bold lg:mb-12 xs:mb-24 text-white z-10">Blog & Articles</h1>
+            <div class='z-20 flex flex-col items-end justify-center'>
+                <div class='w-14 h-1 xs:w-20 xs:h-2 lg:2 bg-white mb-6 xs:mb-10 lg:mb-10'></div>
+                <div class='flex'>  
+                  <p class='text-white font-semibold text-lg xs:text-xl lg:text-xl'>All</p>
+                  <FaArrowUp class='rotate-45 ms-2 text-white hidden lg:block' size={24}/>
+                </div>
+                <div class='flex'>  
+                  <p class='text-white font-semibold text-lg xs:text-xl lg:text-xl'>Blogs</p>
+                  <FaArrowUp class='rotate-45 ms-2 text-white hidden lg:block' size={24}/>
+                </div>
+                <div class='flex'>  
+                  <p class='text-white font-semibold text-lg xs:text-xl lg:text-xl'>Articles</p>
+                  <FaArrowUp class='rotate-45 ms-2 text-white hidden lg:block' size={24}/>
+                </div>
+            </div>
+        </div>
+       
+        <div class="flex flex-col items-center justify-center flex-wrap mt-20  gap-10">
+  
     {posts.length ? posts.map((post) => <BlogPost post={post}/> ) : <p>no Posts</p>}
-  </section>
+          </div>
+    </section>
+    <Footer client:load/>
+  
 </Layout>

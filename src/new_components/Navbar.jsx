@@ -7,7 +7,7 @@ import SvgButton from './SvgButton';
 import { ScrollUpButton } from '../components/ScrollUpButton';
 
 const navbarLinks = [
-    { label: "Blog", href: "/Blogs", ariaLabel: "blog" },
+    { label: "Blog", href: "/posts", ariaLabel: "blog" },
     { label: "Achievements", href: "/achievement", ariaLabel: "Features" },
     { label: "Contact", href: "/Contact", ariaLabel: "contact" },
     { label: "Service", href: "/Service", ariaLabel: "service" },
